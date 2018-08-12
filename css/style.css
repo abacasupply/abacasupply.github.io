@@ -5,9 +5,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: #fff;
-	background-color: #1f1c1d;
+	background: #1f1c1d url(../assets/binding_dark.png);
 	transition: background-color .5s;
 	webkit-tap-highlight-color: #231f20;
+	margin: 0;
 }
 
 .flex-container {
@@ -147,6 +148,54 @@ ul.share li a:hover {
 }
 ul.share li a i {
 	margin-right: 5px;
+}
+
+.fs-split {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.fs-split .split-image {
+    width: 50%;
+    height: 100vh;
+    background-image: url("../assets/background.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.fs-split .split-content {
+	width: 50%;
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	overflow: auto;
+}
+
+@media (max-width: 800px) {
+	.fs-split {
+		height: auto;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+    .fs-split .split-image {
+		height: 80vh;
+		width: 100%;
+	}
+	.fs-split .split-content {
+		width: 100%;
+		height: auto;
+	}
+	.fs-split .split-content .flex-item {
+		padding: 60px;
+	}
 }
 
 @media only screen and (max-width: 769px) {
