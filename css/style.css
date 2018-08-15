@@ -70,7 +70,8 @@ a {
 	outline: none;
 	font-size: 16px;
 	font-family: 'proxima_novaregular', sans-serif;
-	color: #231f20;
+	color: #fff;
+	background: transparent;
 }
 #mc_embed_signup form input:not([type=submit]) {
 	width: 100%;
@@ -101,17 +102,17 @@ a {
 }
 #mc_embed_signup form input:focus {
 	outline: none;
-	color: #231f20;
+	color: #fff;
 }
 #mc_embed_signup ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #231f20;
+    color: #fff;
     opacity: 1; /* Firefox */
 }
 #mc_embed_signup :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #231f20;
+    color: #fff;
 }
 #mc_embed_signup ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #231f20;
+    color: #fff;
 }
 
 ul.social {
@@ -141,12 +142,11 @@ ul.share li a {
 	border: 1px solid #fff;
 	text-transform: uppercase;
 	border-radius: 4px 0 4px 0;
-	background-color: #fff;
-	color: #1f1c1d;
+	background-color: transparent;
 }
 ul.share li a:hover {
-	background-color: transparent;
-	color: #fff;
+	background-color: #fff;
+	color: #1f1c1d;
 }
 ul.share li a i {
 	margin-right: 5px;
