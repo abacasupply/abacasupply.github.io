@@ -57,7 +57,7 @@ a {
 	position: relative;
 	display: block;
 	height: 60px;
-	border-radius: 0px;
+	border-radius: 4px 0 4px 0;
 	margin: 0 auto;
 	overflow: hidden;
 	border: 1px solid #fff;
@@ -68,10 +68,9 @@ a {
 	padding: 0;
 	border: none;
 	outline: none;
-	background: transparent;
 	font-size: 16px;
 	font-family: 'proxima_novaregular', sans-serif;
-	color: #fff;
+	color: #231f20;
 }
 #mc_embed_signup form input:not([type=submit]) {
 	width: 100%;
@@ -98,21 +97,21 @@ a {
 }
 #mc_embed_signup form input:not([type=email]):hover,
 #mc_embed_signup form input:not([type=email]):focus {
-	background: url('../assets/icon-arrowright.svg') no-repeat center center;
+	background: url('../assets/icon-paperplane.svg') no-repeat center center;
 }
 #mc_embed_signup form input:focus {
 	outline: none;
-	color: #fff;
+	color: #231f20;
 }
 #mc_embed_signup ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #fff;
+    color: #231f20;
     opacity: 1; /* Firefox */
 }
 #mc_embed_signup :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #fff;
+    color: #231f20;
 }
 #mc_embed_signup ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #fff;
+    color: #231f20;
 }
 
 ul.social {
@@ -141,10 +140,13 @@ ul.share li a {
 	margin: 0 5px;
 	border: 1px solid #fff;
 	text-transform: uppercase;
-}
-ul.share li a:hover {
+	border-radius: 4px 0 4px 0;
 	background-color: #fff;
 	color: #1f1c1d;
+}
+ul.share li a:hover {
+	background-color: transparent;
+	color: #fff;
 }
 ul.share li a i {
 	margin-right: 5px;
